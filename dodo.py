@@ -30,8 +30,14 @@ def task_reload_holes():
     footprint = base_mh["footprint"]
     holes = base_mh["holes"]
 
+    def check_board(board):
+        print(f"Checking board: {board}")
+        if not board:
+            raise ValueError("Board name cannot be empty.")
+
     actions = [
-        f'"{KICAD_PYTHON}" ./scripts/mh_delete_all.py %(board)s/%(board)s.kicad_pcb'
+        check_board,
+        f'"{KICAD_PYTHON}" ./scripts/mh_delete_all.py %(board)s/%(board)s.kicad_pcb',
     ]
     for hole in holes:
         x = hole["x"]
