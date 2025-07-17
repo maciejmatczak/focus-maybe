@@ -2,5 +2,27 @@
     "base_hole_w": 77.0,
     "base_hole_h": 26.0,
     "base_hole_dia": 2.0,
-    "display_hole_dia": 3.0
+    "base_hole_fp": "MountingHole_2.2mm_M2_Pad_Via",
+    "display_hole_dia": 3.0,
+    "base_mh": {
+        "footprint": "MountingHole_2.2mm_M2_Pad_Via",
+        "holes": [
+            {
+                "x": 0.0,
+                "y": 0.0
+            },
+            {
+                "x": 77.0,
+                "y": 0.0
+            },
+            {
+                "x": 77.0,
+                "y": 26.0
+            },
+            {
+                "x": 0.0,
+                "y": 26.0
+            }
+        ]
+    }
 }
